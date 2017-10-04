@@ -11,9 +11,9 @@
     <Company>Ocura</Company>
     <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
     <Description>Generate spreadsheet(CSV and Excel) easily</Description>
-    <PackageLicenseUrl>https://raw.githubusercontent.com/ocura/dotnet-helper/master/LICENSE.txt</PackageLicenseUrl>
+    <PackageLicenseUrl>https://raw.githubusercontent.com/ocura/dotnet-spreadsheet/master/LICENSE.txt</PackageLicenseUrl>
     <PackageProjectUrl>https://github.com/ocura/dotnet-spreadsheet</PackageProjectUrl>
-    <PackageIconUrl>https://raw.githubusercontent.com/ocura/dotnet-helper/master/assets/generated/ocura-spreadsheet.png</PackageIconUrl>
+    <PackageIconUrl>https://raw.githubusercontent.com/ocura/dotnet-spreadsheet/master/assets/generated/ocura-spreadsheet.png</PackageIconUrl>
     <RepositoryUrl>https://github.com/ocura/dotnet-spreadsheet</RepositoryUrl>
     <RepositoryType>git</RepositoryType>
     <PackageReleaseNotes>Generate Excel(xlsx) and CSV from a list of object or matrix of string.</PackageReleaseNotes>
