@@ -7,29 +7,23 @@ namespace Ocura.Spreadsheet
   public abstract class Spreadsheet
   {
     /// <summary>
-    ///   Gets the body.
+    /// Gets the header.
     /// </summary>
     /// <value>
-    ///   The body.
+    /// The header.
     /// </value>
-    public IEnumerable<IEnumerable<object>> Body { get; protected set; }
+    public IEnumerable<object> Header { get; private set; }
 
     /// <summary>
-    ///   Gets the header.
+    /// Gets the body.
     /// </summary>
     /// <value>
-    ///   The header.
+    /// The body.
     /// </value>
-    public IEnumerable<object> Header { get; protected set; }
+    public IEnumerable<IEnumerable<object>> Body { get; private set; }
 
     /// <summary>
-    ///   Generates the file.
-    /// </summary>
-    /// <returns></returns>
-    public abstract byte[] GenerateFile();
-
-    /// <summary>
-    ///   Sets the data.
+    /// Sets the data.
     /// </summary>
     /// <param name="header">The header.</param>
     /// <param name="body">The body.</param>
@@ -48,7 +42,7 @@ namespace Ocura.Spreadsheet
     }
 
     /// <summary>
-    ///   Sets the data.
+    /// Sets the data.
     /// </summary>
     /// <param name="header">The header.</param>
     /// <param name="body">The body.</param>
@@ -61,7 +55,7 @@ namespace Ocura.Spreadsheet
     }
 
     /// <summary>
-    ///   Sets the data.
+    /// Sets the data.
     /// </summary>
     /// <param name="data">The data.</param>
     /// <exception cref="ArgumentNullException">
@@ -73,12 +67,18 @@ namespace Ocura.Spreadsheet
     }
 
     /// <summary>
-    ///   Sets the data.
+    /// Sets the data.
     /// </summary>
     /// <param name="data">The data.</param>
     public void SetData(IEnumerable<object> data)
     {
       SetData(null, data);
     }
+
+    /// <summary>
+    /// Generates the file.
+    /// </summary>
+    /// <returns></returns>
+    public abstract byte[] GenerateFile();
   }
 }

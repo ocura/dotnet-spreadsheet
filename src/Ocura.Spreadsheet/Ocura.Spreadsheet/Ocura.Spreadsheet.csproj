@@ -2,27 +2,27 @@
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
-	<Version>0.0.1</Version>
-    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
-    <AssemblyVersion>0.0.1.0</AssemblyVersion>
-    <FileVersion>0.0.1.0</FileVersion>
-    <Copyright>Copyright 2017</Copyright>
+    <Version>0.2.0</Version>
     <Authors>Dalton Ocura</Authors>
     <Company>Ocura</Company>
-    <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
-    <Description>Generate spreadsheet(CSV and Excel) easily</Description>
     <PackageLicenseUrl>https://raw.githubusercontent.com/ocura/dotnet-spreadsheet/master/LICENSE.txt</PackageLicenseUrl>
+    <Copyright>Ocura © 2018</Copyright>
     <PackageProjectUrl>https://github.com/ocura/dotnet-spreadsheet</PackageProjectUrl>
-    <PackageIconUrl>https://raw.githubusercontent.com/ocura/dotnet-spreadsheet/master/assets/generated/ocura-spreadsheet.png</PackageIconUrl>
-    <RepositoryUrl>https://github.com/ocura/dotnet-spreadsheet</RepositoryUrl>
-    <RepositoryType>git</RepositoryType>
-    <PackageReleaseNotes>Generate Excel(xlsx) and CSV from a list of object or matrix of string.</PackageReleaseNotes>
-    <PackageTags>Spreadsheet CSV Excel XLSX</PackageTags>
+    <RepositoryUrl>https://github.com/ocura/dotnet-spreadsheet.git</RepositoryUrl>
+    <RepositoryType>Git</RepositoryType>
+    <PackageTags>Spreadsheet Excel Csv</PackageTags>
+    <PackageReleaseNotes></PackageReleaseNotes>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <PackageIconUrl>https://raw.githubusercontent.com/ocura/dotnet-spreadsheet/master/assets/icon.png</PackageIconUrl>
+    <AssemblyVersion>0.0.0.0</AssemblyVersion>
+    <FileVersion>0.0.0.0</FileVersion>
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="5.1.1" />
     <PackageReference Include="DocumentFormat.OpenXml" Version="2.7.2" />
-    <PackageReference Include="Ocura.Helper" Version="0.0.2" />
+    <PackageReference Include="Microsoft.CSharp" Version="4.4.1" />
+    <PackageReference Include="Ocura.Helper" Version="0.1.1" />
   </ItemGroup>
 
 </Project>
