@@ -214,7 +214,7 @@ namespace Ocura.Spreadsheet.Excel
             }
             else
             {
-              stgValue = c.CellValue.Text;
+              stgValue = c.CellValue?.Text ;
             }
 
             object convertedValue;
@@ -222,10 +222,10 @@ namespace Ocura.Spreadsheet.Excel
             switch (excelMap.Type)
             {
               case ExcelMapper.Type.Double:
-                convertedValue = Convert.ToDouble(stgValue);
+                convertedValue = Convert.ToDouble(stgValue ?? 0);
                 break;
               case ExcelMapper.Type.Int:
-                convertedValue = Convert.ToInt32(stgValue);
+                convertedValue = Convert.ToInt32(stgValue ?? 0);
                 break;
               case ExcelMapper.Type.String:
                 convertedValue = stgValue;
